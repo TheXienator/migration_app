@@ -1,0 +1,13 @@
+<h1>Here is one person</h1>
+First Name: <%= @person.first_name %>
+<br/>
+Last Name: <%= @person.last_name %>
+
+<br/>
+<%= link_to("Edit", edit_person_path(@person.id)) %>
+
+<br/>
+<%= link_to "Delete", person_path(@person.id), method: :delete, data: {confirm: 'Are you sure?'} %>
+
+<br/>
+<%= link_to("Home", people_path) %>
